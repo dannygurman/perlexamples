@@ -1,0 +1,7 @@
+Double quotes use variable expansion. Single quotes don't
+
+In a double quoted string you need to escape certain characters
+to stop them being interpreted differently.
+
+ In a single quoted string you don't (except for a backslash if it is the
+ final character in the string)

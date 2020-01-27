@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/10059806/do-i-need-to-include-usr-bin-perl-line-in-perl-script-on-windows
+
+Do I need to include #!/usr/bin/perl line in Perl script on Windows?
+
+15
+
+If you want the script to be portable to UNIX and Cygwin, keep the shebang line.
+Even on Windows where the OS doesn't use it to determine how to run the file,
+ Perl will still parse switches written there, such as
+
+#!/usr/bin/perl -w
+which turns warnings on by default (like use warnings; but global).

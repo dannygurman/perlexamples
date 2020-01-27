@@ -1,0 +1,5 @@
+
+Welcome to CPAN
+The Comprehensive Perl Archive Network (CPAN)
+currently has 185,106 Perl modules in 40,821 distributions,
+ written by 13,898 authors, mirrored on 254 servers.

@@ -1,0 +1,3 @@
+perl -V  / perl -v (less details)
+
+perl -MCPAN -e shell

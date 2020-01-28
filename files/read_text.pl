@@ -2,7 +2,7 @@
 use strict;
 use warnings FATAL => 'all';
 
-sub main {
+sub parsing_example {
     my $file = 'input1.txt';
     #INPUT used instead of file handler. upper case in convention
     open(INPUT, $file) or die( "Input file not found\n"); # kill if not opened - die will not run if first part is true
@@ -17,4 +17,4 @@ sub main {
     close (INPUT);
 }
 
-main()
+parsing_example()

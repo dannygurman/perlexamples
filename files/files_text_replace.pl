@@ -8,7 +8,7 @@ use warnings;
 
 # Output:KLM egg nop qrs
 
-sub main {
+sub parsing_example {
     my $in_file = 'input_text_replace.txt';
     my $out_file = 'output1.txt';
 
@@ -35,6 +35,6 @@ sub main {
     close ($out_file_handler);
 }
 
-main()
+parsing_example()
 
 

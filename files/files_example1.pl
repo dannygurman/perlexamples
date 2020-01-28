@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-sub main {
+sub parsing_example {
     my $file = 'input1.txt';
     if ( -f $file) {
         print "Found file > $file\n";
@@ -12,4 +12,4 @@ sub main {
     }
 }
 
-main();
+parsing_example();

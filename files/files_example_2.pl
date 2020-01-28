@@ -6,7 +6,7 @@ use warnings;
 #  it's generated rather than being buffered.
 $|=1;
 
-sub main {
+sub parsing_example {
     my @files = (
         'input1.txt',
         'input2.txt',
@@ -21,4 +21,4 @@ sub main {
 
 }
 
-main();
+parsing_example();

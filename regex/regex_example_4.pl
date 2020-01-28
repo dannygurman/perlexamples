@@ -6,7 +6,7 @@ $|=1;
 
 # Using Escape
 
-sub main {
+sub parsing_example {
     # \d digit
     # \s space
     # \S Non-spcee
@@ -21,4 +21,4 @@ sub main {
     }
 }
 
-main()
+parsing_example()

@@ -1,3 +1,5 @@
+  see https://www.tutorialspoint.com/perl/perl_object_oriented.htm
+
  Object Oriented concept in Perl is very much based on references and anonymous array and hashes.
 
  An object within Perl is merely a reference to a data type that knows what class it belongs to.
@@ -37,4 +39,42 @@ You can use any kind of Perl variable as an object in Perl.
  returns an object reference.
  The object reference is created by blessing a reference to the package's class
 
- see https://www.tutorialspoint.com/perl/perl_object_oriented.htm
+Inheritance
+-----------------
+Example- we can have a class Employee, which inherits from Person.
+ This is referred to as an "isa" relationship because an employee is a person.
+  Perl has a special variable, @ISA, to help with this. @ISA governs (method) inheritance.
+
+Following are the important points to be considered while using inheritance −
+Perl searches the class of the specified object for the given method or attribute, i.e., variable.
+Perl searches the classes defined in the object class's @ISA array.
+If no method is found in steps 1 or 2, then Perl uses an AUTOLOAD subroutine, if one is found in the @ISA tree.
+If a matching method still cannot be found, then Perl searches for the method within the UNIVERSAL class (package)
+that comes as part of the standard Perl library.
+If the method still has not found, then Perl gives up and raises a runtime exception.
+
+
+-----------------------------------
+Destructors and Garbage Collection
+Perl automatically free the memory allocated to the object when you have finished using it
+for you as soon as the object goes out of scope.
+
+In case you want to implement your destructor, which should take care of closing files or doing some extra
+processing then you need to define a special method called DESTROY.
+This method will be called on the object just before Perl frees the memory allocated to it.
+ In all other respects, the DESTROY method is just like any other method,
+  and you can implement whatever logic you want inside this method.
+
+A destructor method is simply a member function (subroutine) named DESTROY,
+which will be called automatically in following cases −
+When the object reference's variable goes out of scope.
+When the object reference's variable is undef-ed.
+When the script terminates
+When the perl interpreter terminates
+For Example, you can simply put the following method DESTROY in your class −
+
+package MyClass;
+...
+sub DESTROY {
+   print "MyClass::DESTROY called\n";
+}

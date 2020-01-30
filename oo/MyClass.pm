@@ -1,4 +1,4 @@
-package Data::MyClass;
+package MyClass;
 use strict;
 use warnings FATAL => 'all';
 

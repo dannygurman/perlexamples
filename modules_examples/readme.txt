@@ -1,3 +1,12 @@
+
+@INC is a built-in array perl provides. It contains a series of directories, the "search path" for perl when trying to load a modul
+
+When perl encounters a use statement, a require statement, or a do statement:
+use Module::Name;
+require Module::Name;
+do "Module/Name.pm";
+perl will go over the directories listed in @INC and check if the appropriate file can be found.
+
 In order to use the modules in perlexamples/modules_examples
 we need to do one of the following:
 
@@ -22,4 +31,6 @@ set PERL5LIB=c:\path\to\dir
 
 Could be done also in in intellij ide run configuration
 
-see https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations
+see:
+ https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations
+ https://perlmaven.com/what-is-at-inc

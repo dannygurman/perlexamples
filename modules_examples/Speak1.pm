@@ -1,12 +1,9 @@
-package Speak;
-use strict;
+package Speak2;
+
 use warnings FATAL => 'all';
 
-use Exporter qw(import);
 
-@EXPORT_OK = qw(test greet);
-# @EXPORT = qw(test);
-
+use strict;
 sub test {
     print "Hello there.\n";
 }

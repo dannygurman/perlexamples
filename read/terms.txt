@@ -5,3 +5,23 @@ currently has 185,106 Perl modules in 40,821 distributions,
  written by 13,898 authors, mirrored on 254 servers.
 
  subroutine - (no method since it is not object oriented)
+
+ An object within Perl is merely a reference to a data type that knows what class it belongs to.
+  The object is stored as a reference in a scalar variable.
+   Because a scalar only contains a reference to the object,
+    the same scalar can hold different objects in different classes.
+
+ A class within Perl is a package that contains the corresponding methods
+ required to create and manipulate objects.
+
+ A method within Perl is a subroutine, defined with the package.
+  The first argument to the method is an object reference or a package name,
+   depending on whether the method affects the current object or the class.
+
+   A package is a self-contained unit of user-defined variables and subroutines, which can
+    be re-used over and over again.
+   Perl Packages provide a separate namespace within a Perl program which keeps subroutines and variables
+    independent from conflicting with those in other packages.
+
+
+    In Perl, CGI(Common Gateway Interface) is a protocol for executing scripts via web requests. It
